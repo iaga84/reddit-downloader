@@ -1,3 +1,3 @@
 SHELL=/bin/bash
-add 0/10 * * * * root /reddit-download.sh >/dev/null 2>&1
+0,15,30,45 * * * * root /reddit-download.sh
 # An empty line is required at the end of this file for ka valid cron file.
