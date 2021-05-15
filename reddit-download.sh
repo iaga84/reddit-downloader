@@ -1,5 +1,10 @@
 #!/bin/bash
 
+PYTHONPATH="/usr/local/lib/python3.9:/usr/local/lib/python3.9/lib-dynload:/usr/local/lib/python3.9/site-packages:$PYTHONPATH"
+PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
+export PYTHONPATH
+export PATH
+
 set -euo pipefail
 pip install -U bdfr
 
@@ -21,3 +26,6 @@ python3 -m bdfr download /downloads \
   --skip-domain 'www.youtube.com' \
   --skip-domain 'polygon.com' \
   --exclude-id 'mohgr6'
+
+date >> /var/log/cron.log
+
