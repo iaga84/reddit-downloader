@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+pip install -U bdfr
 
 if ! grep -q user_token "/root/.config/bdfr/default_config.cfg"; then
   echo "client_id = $CLIENT_ID" >> /root/.config/bdfr/default_config.cfg
@@ -15,7 +16,7 @@ python3 -m bdfr download /downloads \
   --no-dupes \
   --search-existing \
   --file-scheme '{POSTID}_{TITLE}' \
-  -L 50 \
+  -L 100 \
   --skip-domain 'youtube.com' \
   --skip-domain 'www.youtube.com' \
   --skip-domain 'polygon.com' \
