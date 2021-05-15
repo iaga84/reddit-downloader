@@ -13,6 +13,7 @@ python3 -m bdfr download /downloads \
   --upvoted \
   --authenticate \
   --no-dupes \
+  --search-existing \
   --file-scheme '{POSTID}_{TITLE}' \
   -L 50 \
   --skip-domain 'youtube.com' \
