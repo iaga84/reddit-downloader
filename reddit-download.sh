@@ -21,7 +21,7 @@ python3 -m bdfr download /downloads \
   --no-dupes \
   --search-existing \
   --file-scheme '{POSTID}_{TITLE}' \
-  -L 100 \
+  -L 500 \
   --skip-domain 'youtube.com' \
   --skip-domain 'www.youtube.com' \
   --skip-domain 'polygon.com' \
