@@ -19,9 +19,9 @@ python3 -m bdfr download /downloads \
   --upvoted \
   --authenticate \
   --no-dupes \
-  --search-existing \
   --file-scheme '{POSTID}_{TITLE}' \
-  -L 500 \
+  -L 1000 \
+  --skip-domain 'youtu.be' \
   --skip-domain 'youtube.com' \
   --skip-domain 'www.youtube.com' \
   --skip-domain 'polygon.com' \
