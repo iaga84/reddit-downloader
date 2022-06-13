@@ -10,7 +10,7 @@ ENV CLIENT_SECRET $CLIENT_SECRET
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y cron python3-dev libssl-dev openssl libacl1-dev libacl1 build-essential && \
+    apt-get install -y cron python3-dev libssl-dev openssl libacl1-dev libacl1 build-essential ffmpeg && \
     pip install -U pip setuptools wheel && \
     pip install -U bdfr
 
